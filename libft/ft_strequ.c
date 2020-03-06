@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_error.c                                         :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/05 19:12:28 by ctelma            #+#    #+#             */
-/*   Updated: 2020/02/16 13:04:27 by ctelma           ###   ########.fr       */
+/*   Created: 2019/09/08 15:18:16 by ctelma            #+#    #+#             */
+/*   Updated: 2019/12/29 16:23:36 by ophuong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "checker.h"
+#include "includes/libft.h"
 
-void	del_mem(void)
+int		ft_strequ(char const *s1, char const *s2)
 {
-	exit(0);
-}
-
-void	ft_error(void)
-{
-	ft_putstr_fd(RED_T, 2);
-	ft_putstr_fd("Error\n", 2);
-	ft_putstr_fd(WHITE_T, 2);
-	exit(1);
+	if (!s1 || !s2)
+		return (0);
+	if (ft_strcmp(s1, s2) == 0)
+		return (1);
+	return (0);
 }

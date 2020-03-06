@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ctelma/Desktop/filler/ft_printf/header/ft_printf.h
+../../libft/includes/libft.h
+/Users/ctelma/Desktop/filler/libft/includes/libft.h
+stdio.h
+-
+stdarg.h
+-
+
+/Users/ctelma/Desktop/filler/header/filler.h
+../ft_printf/header/ft_printf.h
+/Users/ctelma/Desktop/filler/ft_printf/header/ft_printf.h
+fcntl.h
+-
+
+/Users/ctelma/Desktop/filler/libft/includes/libft.h
+stdlib.h
+-
+unistd.h
+-
+string.h
+-
+
+/Users/ctelma/Desktop/filler/src/read_map.c
+../header/filler.h
+/Users/ctelma/Desktop/filler/header/filler.h
+
