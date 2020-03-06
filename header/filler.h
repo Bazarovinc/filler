@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 11:17:35 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/06 13:49:51 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/06 16:47:34 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ struct					s_pl
 	int **piece;
 	int p_s_x;
 	int p_s_y;
+	int my_pos1[2];
+	int en_pos1[2];
 };
 
 int						get_next_line(const int fd, char **line);
@@ -52,5 +54,6 @@ void					check_correct_input(char *s, int flag);
 void					read_map_size(t_pl *play, char *s);
 void					read_piece_size(t_pl *play, char *s);
 void					read_piece(t_pl * play);
+void					first_push(t_pl *play);
 
 #endif

@@ -122,4 +122,6 @@ add_executable(filler
         src/algoritm.c
         src/check_valid.c
         src/read_map.c
-        src/read_sizes.c)
+        src/read_sizes.c
+        src/first_push.c
+        )

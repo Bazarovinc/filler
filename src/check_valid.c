@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 13:31:32 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/06 13:31:42 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/06 13:40:37 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	check_correct_input(char *s, int flag)
 	}
 	else if (flag == 2)
 	{
-		if (ft_strnequ(s, "Piece", 7) ==  0)
+		if (ft_strnequ(s, "Piece ", 6) ==  0)
 			ft_error();
 	}
 }

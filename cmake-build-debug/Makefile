@@ -3012,6 +3012,33 @@ src/filler.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/filler.c.s
 .PHONY : src/filler.c.s
 
+src/first_push.o: src/first_push.c.o
+
+.PHONY : src/first_push.o
+
+# target to build an object file
+src/first_push.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/first_push.c.o
+.PHONY : src/first_push.c.o
+
+src/first_push.i: src/first_push.c.i
+
+.PHONY : src/first_push.i
+
+# target to preprocess a source file
+src/first_push.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/first_push.c.i
+.PHONY : src/first_push.c.i
+
+src/first_push.s: src/first_push.c.s
+
+.PHONY : src/first_push.s
+
+# target to generate assembly for a file
+src/first_push.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/first_push.c.s
+.PHONY : src/first_push.c.s
+
 src/ft_error.o: src/ft_error.c.o
 
 .PHONY : src/ft_error.o
@@ -3477,6 +3504,9 @@ help:
 	@echo "... src/filler.o"
 	@echo "... src/filler.i"
 	@echo "... src/filler.s"
+	@echo "... src/first_push.o"
+	@echo "... src/first_push.i"
+	@echo "... src/first_push.s"
 	@echo "... src/ft_error.o"
 	@echo "... src/ft_error.i"
 	@echo "... src/ft_error.s"

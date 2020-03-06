@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 11:14:58 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/06 15:01:49 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/06 16:56:31 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,14 +44,16 @@ static void	first_read(t_pl *play)
 	play->map = ft_set_matrix(play->m_s_y, play->m_s_x);
 	FT_SKIP(s);
 	read_map(play);
-	print_map(play->map, play->m_s_y, play->m_s_x);
+	//print_map(play->map, play->m_s_y, play->m_s_x);
+	get_next_line(0, &s);
 	read_piece_size(play, s);
 	free(s);
 	play->piece = ft_set_matrix(play->p_s_y, play->p_s_x);
 	read_piece(play);
-	ft_printf("\n");
-	print_map(play->piece, play->p_s_y, play->p_s_x);
-	algoritm(play);
+//	ft_printf("\n");
+	//print_map(play->piece, play->p_s_y, play->p_s_x);
+	first_push(play);
+	//algoritm(play);
 }
 
 int		main(void)
