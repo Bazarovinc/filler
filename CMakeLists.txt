@@ -124,4 +124,5 @@ add_executable(filler
         src/read_map.c
         src/read_sizes.c
         src/first_push.c
-        )
+        src/choose_player.c
+        src/make_map.c src/check_1_line.c src/ft_min.c src/check_last_line.c src/check_mid_lines.c src/choose_player.c)

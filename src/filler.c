@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 11:14:58 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/06 16:56:31 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/08 18:50:57 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static void	print_map(int **m, int s1, int s2)
 		j = 0;
 		while (j < s2)
 		{
-			ft_printf("%d", m[i][j]);
+			ft_printf("%3d", m[i][j]);
 			j++;
 		}
 		ft_printf("\n");
@@ -37,14 +37,14 @@ static void	first_read(t_pl *play)
 
 	get_next_line(0, &s);
 	check_correct_input(s, 0);
-	play->player = s[10] - '0';
+	choose_player(play, s);
 	free(s);
 	get_next_line(0, &s);
 	read_map_size(play, s);
-	play->map = ft_set_matrix(play->m_s_y, play->m_s_x);
+	play->m = ft_set_matrix(play->m_s_y, play->m_s_x);
 	FT_SKIP(s);
 	read_map(play);
-	//print_map(play->map, play->m_s_y, play->m_s_x);
+	print_map(play->m, play->m_s_y, play->m_s_x);
 	get_next_line(0, &s);
 	read_piece_size(play, s);
 	free(s);

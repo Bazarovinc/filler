@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 12:46:53 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/06 14:57:26 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/08 19:08:34 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,14 @@ static void	read_map_str(t_pl *play, char *s, int i)
 	k = 0;
 	while (s[j] != '\0')
 	{
-		while ((s[j] >= '0' && s[j] < '9') || s[j] == ' ')
+		while ((s[j] >= '0' && s[j] <= '9') || s[j] == ' ')
 			j++;
-		if (s[j] == '.')
-			play->map[i][k] = 0;
-		else if (s[j] == 'o' || s[j] == 'O')
-			play->map[i][k] = 1;
-		else if (s[j] == 'x' || s[j] == 'X')
-			play->map[i][k] = 2;
+		if (s[j] == play->player_c)
+			play->m[i][k] = -1;
+		else if (s[j] != play->player_c && s[j] != '.')
+			play->m[i][k] = -2;
+		else if (s[j] == '.')
+			play->m[i][k] = 0;
 		j++;
 		k++;
 	}
@@ -67,6 +67,25 @@ void		read_piece(t_pl * play)
 	}
 }
 
+static void	print_map(int **m, int s1, int s2)
+{
+	int i;
+	int j;
+
+	i = 0;
+	while (i < s1)
+	{
+		j = 0;
+		while (j < s2)
+		{
+			ft_printf("%3d", m[i][j]);
+			j++;
+		}
+		ft_printf("\n");
+		i++;
+	}
+}
+
 void		read_map(t_pl *play)
 {
 	char	*s;
@@ -80,4 +99,6 @@ void		read_map(t_pl *play)
 		free(s);
 		i++;
 	}
+	print_map(play->m, play->m_s_y, play->m_s_x);
+	make_map(play);
 }

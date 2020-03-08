@@ -410,7 +410,19 @@
 		<Unit filename="/Users/ctelma/Desktop/filler/src/algoritm.c">
 			<Option target="filler"/>
 		</Unit>
+		<Unit filename="/Users/ctelma/Desktop/filler/src/check_1_line.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="/Users/ctelma/Desktop/filler/src/check_last_line.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="/Users/ctelma/Desktop/filler/src/check_mid_lines.c">
+			<Option target="filler"/>
+		</Unit>
 		<Unit filename="/Users/ctelma/Desktop/filler/src/check_valid.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="/Users/ctelma/Desktop/filler/src/choose_player.c">
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/ctelma/Desktop/filler/src/filler.c">
@@ -422,7 +434,13 @@
 		<Unit filename="/Users/ctelma/Desktop/filler/src/ft_error.c">
 			<Option target="filler"/>
 		</Unit>
+		<Unit filename="/Users/ctelma/Desktop/filler/src/ft_min.c">
+			<Option target="filler"/>
+		</Unit>
 		<Unit filename="/Users/ctelma/Desktop/filler/src/get_next_line.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="/Users/ctelma/Desktop/filler/src/make_map.c">
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/ctelma/Desktop/filler/src/read_map.c">

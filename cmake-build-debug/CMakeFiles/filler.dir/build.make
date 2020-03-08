@@ -1526,6 +1526,84 @@ CMakeFiles/filler.dir/src/first_push.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/src/first_push.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ctelma/Desktop/filler/src/first_push.c -o CMakeFiles/filler.dir/src/first_push.c.s
 
+CMakeFiles/filler.dir/src/choose_player.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/src/choose_player.c.o: ../src/choose_player.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/filler.dir/src/choose_player.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/src/choose_player.c.o   -c /Users/ctelma/Desktop/filler/src/choose_player.c
+
+CMakeFiles/filler.dir/src/choose_player.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/src/choose_player.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ctelma/Desktop/filler/src/choose_player.c > CMakeFiles/filler.dir/src/choose_player.c.i
+
+CMakeFiles/filler.dir/src/choose_player.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/src/choose_player.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ctelma/Desktop/filler/src/choose_player.c -o CMakeFiles/filler.dir/src/choose_player.c.s
+
+CMakeFiles/filler.dir/src/make_map.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/src/make_map.c.o: ../src/make_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/filler.dir/src/make_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/src/make_map.c.o   -c /Users/ctelma/Desktop/filler/src/make_map.c
+
+CMakeFiles/filler.dir/src/make_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/src/make_map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ctelma/Desktop/filler/src/make_map.c > CMakeFiles/filler.dir/src/make_map.c.i
+
+CMakeFiles/filler.dir/src/make_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/src/make_map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ctelma/Desktop/filler/src/make_map.c -o CMakeFiles/filler.dir/src/make_map.c.s
+
+CMakeFiles/filler.dir/src/check_1_line.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/src/check_1_line.c.o: ../src/check_1_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/filler.dir/src/check_1_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/src/check_1_line.c.o   -c /Users/ctelma/Desktop/filler/src/check_1_line.c
+
+CMakeFiles/filler.dir/src/check_1_line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/src/check_1_line.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ctelma/Desktop/filler/src/check_1_line.c > CMakeFiles/filler.dir/src/check_1_line.c.i
+
+CMakeFiles/filler.dir/src/check_1_line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/src/check_1_line.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ctelma/Desktop/filler/src/check_1_line.c -o CMakeFiles/filler.dir/src/check_1_line.c.s
+
+CMakeFiles/filler.dir/src/ft_min.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/src/ft_min.c.o: ../src/ft_min.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/filler.dir/src/ft_min.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/src/ft_min.c.o   -c /Users/ctelma/Desktop/filler/src/ft_min.c
+
+CMakeFiles/filler.dir/src/ft_min.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/src/ft_min.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ctelma/Desktop/filler/src/ft_min.c > CMakeFiles/filler.dir/src/ft_min.c.i
+
+CMakeFiles/filler.dir/src/ft_min.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/src/ft_min.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ctelma/Desktop/filler/src/ft_min.c -o CMakeFiles/filler.dir/src/ft_min.c.s
+
+CMakeFiles/filler.dir/src/check_last_line.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/src/check_last_line.c.o: ../src/check_last_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/filler.dir/src/check_last_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/src/check_last_line.c.o   -c /Users/ctelma/Desktop/filler/src/check_last_line.c
+
+CMakeFiles/filler.dir/src/check_last_line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/src/check_last_line.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ctelma/Desktop/filler/src/check_last_line.c > CMakeFiles/filler.dir/src/check_last_line.c.i
+
+CMakeFiles/filler.dir/src/check_last_line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/src/check_last_line.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ctelma/Desktop/filler/src/check_last_line.c -o CMakeFiles/filler.dir/src/check_last_line.c.s
+
+CMakeFiles/filler.dir/src/check_mid_lines.c.o: CMakeFiles/filler.dir/flags.make
+CMakeFiles/filler.dir/src/check_mid_lines.c.o: ../src/check_mid_lines.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/filler.dir/src/check_mid_lines.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/filler.dir/src/check_mid_lines.c.o   -c /Users/ctelma/Desktop/filler/src/check_mid_lines.c
+
+CMakeFiles/filler.dir/src/check_mid_lines.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/filler.dir/src/check_mid_lines.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ctelma/Desktop/filler/src/check_mid_lines.c > CMakeFiles/filler.dir/src/check_mid_lines.c.i
+
+CMakeFiles/filler.dir/src/check_mid_lines.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/filler.dir/src/check_mid_lines.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ctelma/Desktop/filler/src/check_mid_lines.c -o CMakeFiles/filler.dir/src/check_mid_lines.c.s
+
 # Object files for target filler
 filler_OBJECTS = \
 "CMakeFiles/filler.dir/ft_printf/base.c.o" \
@@ -1640,7 +1718,13 @@ filler_OBJECTS = \
 "CMakeFiles/filler.dir/src/check_valid.c.o" \
 "CMakeFiles/filler.dir/src/read_map.c.o" \
 "CMakeFiles/filler.dir/src/read_sizes.c.o" \
-"CMakeFiles/filler.dir/src/first_push.c.o"
+"CMakeFiles/filler.dir/src/first_push.c.o" \
+"CMakeFiles/filler.dir/src/choose_player.c.o" \
+"CMakeFiles/filler.dir/src/make_map.c.o" \
+"CMakeFiles/filler.dir/src/check_1_line.c.o" \
+"CMakeFiles/filler.dir/src/ft_min.c.o" \
+"CMakeFiles/filler.dir/src/check_last_line.c.o" \
+"CMakeFiles/filler.dir/src/check_mid_lines.c.o"
 
 # External object files for target filler
 filler_EXTERNAL_OBJECTS =
@@ -1758,9 +1842,15 @@ filler: CMakeFiles/filler.dir/src/check_valid.c.o
 filler: CMakeFiles/filler.dir/src/read_map.c.o
 filler: CMakeFiles/filler.dir/src/read_sizes.c.o
 filler: CMakeFiles/filler.dir/src/first_push.c.o
+filler: CMakeFiles/filler.dir/src/choose_player.c.o
+filler: CMakeFiles/filler.dir/src/make_map.c.o
+filler: CMakeFiles/filler.dir/src/check_1_line.c.o
+filler: CMakeFiles/filler.dir/src/ft_min.c.o
+filler: CMakeFiles/filler.dir/src/check_last_line.c.o
+filler: CMakeFiles/filler.dir/src/check_mid_lines.c.o
 filler: CMakeFiles/filler.dir/build.make
 filler: CMakeFiles/filler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Linking C executable filler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Linking C executable filler"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/filler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

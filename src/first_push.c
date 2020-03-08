@@ -14,14 +14,14 @@
 
 static void	check_position(t_pl *play, int i, int j)
 {
-	if (play->map[i][j] == 1 || play->map[i][j] == 2)
+	if (play->m[i][j] == 1 || play->m[i][j] == 2)
 	{
-		if (play->map[i][j] == play->player)
+		if (play->m[i][j] == play->player)
 		{
 			play->my_pos1[0] = i;
 			play->my_pos1[1] = j;
 		}
-		else if (play->map[i][j] != play->player)
+		else if (play->m[i][j] != play->player)
 		{
 			play->en_pos1[0] = i;
 			play->en_pos1[1] = j;

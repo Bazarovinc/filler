@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 11:17:35 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/06 16:47:34 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/08 17:11:16 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,19 +32,21 @@ typedef	struct s_pl		t_pl;
 
 struct					s_pl
 {
-	int	player;
-	int **map;
-	int m_s_x;
-	int m_s_y;
-	int **piece;
-	int p_s_x;
-	int p_s_y;
-	int my_pos1[2];
-	int en_pos1[2];
+	int		player;
+	char	player_c;
+	int		**m;
+	int		m_s_x;
+	int		m_s_y;
+	int		**piece;
+	int		p_s_x;
+	int		p_s_y;
+	int		my_pos1[2];
+	int		en_pos1[2];
 };
 
 int						get_next_line(const int fd, char **line);
 void					ft_error(void);
+void					choose_player(t_pl *play, char *s);
 void					read_map(t_pl *play);
 int						**ft_set_matrix(int size_1, int size_2);
 void					del_mem(void);
@@ -55,5 +57,11 @@ void					read_map_size(t_pl *play, char *s);
 void					read_piece_size(t_pl *play, char *s);
 void					read_piece(t_pl * play);
 void					first_push(t_pl *play);
+void					make_map(t_pl *p);
+void					choose_player(t_pl *play, char *s);
+void					check_1_line(t_pl *p, int i, int j, int c);
+void					check_last_line(t_pl *p, int i, int j, int c);
+void					check_mid_lines(t_pl *p, int i, int j, int c);
+int						ft_min(int *arr, int size);
 
 #endif

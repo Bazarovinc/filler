@@ -2958,6 +2958,87 @@ src/algoritm.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/algoritm.c.s
 .PHONY : src/algoritm.c.s
 
+src/check_1_line.o: src/check_1_line.c.o
+
+.PHONY : src/check_1_line.o
+
+# target to build an object file
+src/check_1_line.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/check_1_line.c.o
+.PHONY : src/check_1_line.c.o
+
+src/check_1_line.i: src/check_1_line.c.i
+
+.PHONY : src/check_1_line.i
+
+# target to preprocess a source file
+src/check_1_line.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/check_1_line.c.i
+.PHONY : src/check_1_line.c.i
+
+src/check_1_line.s: src/check_1_line.c.s
+
+.PHONY : src/check_1_line.s
+
+# target to generate assembly for a file
+src/check_1_line.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/check_1_line.c.s
+.PHONY : src/check_1_line.c.s
+
+src/check_last_line.o: src/check_last_line.c.o
+
+.PHONY : src/check_last_line.o
+
+# target to build an object file
+src/check_last_line.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/check_last_line.c.o
+.PHONY : src/check_last_line.c.o
+
+src/check_last_line.i: src/check_last_line.c.i
+
+.PHONY : src/check_last_line.i
+
+# target to preprocess a source file
+src/check_last_line.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/check_last_line.c.i
+.PHONY : src/check_last_line.c.i
+
+src/check_last_line.s: src/check_last_line.c.s
+
+.PHONY : src/check_last_line.s
+
+# target to generate assembly for a file
+src/check_last_line.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/check_last_line.c.s
+.PHONY : src/check_last_line.c.s
+
+src/check_mid_lines.o: src/check_mid_lines.c.o
+
+.PHONY : src/check_mid_lines.o
+
+# target to build an object file
+src/check_mid_lines.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/check_mid_lines.c.o
+.PHONY : src/check_mid_lines.c.o
+
+src/check_mid_lines.i: src/check_mid_lines.c.i
+
+.PHONY : src/check_mid_lines.i
+
+# target to preprocess a source file
+src/check_mid_lines.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/check_mid_lines.c.i
+.PHONY : src/check_mid_lines.c.i
+
+src/check_mid_lines.s: src/check_mid_lines.c.s
+
+.PHONY : src/check_mid_lines.s
+
+# target to generate assembly for a file
+src/check_mid_lines.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/check_mid_lines.c.s
+.PHONY : src/check_mid_lines.c.s
+
 src/check_valid.o: src/check_valid.c.o
 
 .PHONY : src/check_valid.o
@@ -2984,6 +3065,33 @@ src/check_valid.s: src/check_valid.c.s
 src/check_valid.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/check_valid.c.s
 .PHONY : src/check_valid.c.s
+
+src/choose_player.o: src/choose_player.c.o
+
+.PHONY : src/choose_player.o
+
+# target to build an object file
+src/choose_player.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/choose_player.c.o
+.PHONY : src/choose_player.c.o
+
+src/choose_player.i: src/choose_player.c.i
+
+.PHONY : src/choose_player.i
+
+# target to preprocess a source file
+src/choose_player.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/choose_player.c.i
+.PHONY : src/choose_player.c.i
+
+src/choose_player.s: src/choose_player.c.s
+
+.PHONY : src/choose_player.s
+
+# target to generate assembly for a file
+src/choose_player.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/choose_player.c.s
+.PHONY : src/choose_player.c.s
 
 src/filler.o: src/filler.c.o
 
@@ -3066,6 +3174,33 @@ src/ft_error.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/ft_error.c.s
 .PHONY : src/ft_error.c.s
 
+src/ft_min.o: src/ft_min.c.o
+
+.PHONY : src/ft_min.o
+
+# target to build an object file
+src/ft_min.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/ft_min.c.o
+.PHONY : src/ft_min.c.o
+
+src/ft_min.i: src/ft_min.c.i
+
+.PHONY : src/ft_min.i
+
+# target to preprocess a source file
+src/ft_min.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/ft_min.c.i
+.PHONY : src/ft_min.c.i
+
+src/ft_min.s: src/ft_min.c.s
+
+.PHONY : src/ft_min.s
+
+# target to generate assembly for a file
+src/ft_min.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/ft_min.c.s
+.PHONY : src/ft_min.c.s
+
 src/get_next_line.o: src/get_next_line.c.o
 
 .PHONY : src/get_next_line.o
@@ -3092,6 +3227,33 @@ src/get_next_line.s: src/get_next_line.c.s
 src/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/get_next_line.c.s
 .PHONY : src/get_next_line.c.s
+
+src/make_map.o: src/make_map.c.o
+
+.PHONY : src/make_map.o
+
+# target to build an object file
+src/make_map.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/make_map.c.o
+.PHONY : src/make_map.c.o
+
+src/make_map.i: src/make_map.c.i
+
+.PHONY : src/make_map.i
+
+# target to preprocess a source file
+src/make_map.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/make_map.c.i
+.PHONY : src/make_map.c.i
+
+src/make_map.s: src/make_map.c.s
+
+.PHONY : src/make_map.s
+
+# target to generate assembly for a file
+src/make_map.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/make_map.c.s
+.PHONY : src/make_map.c.s
 
 src/read_map.o: src/read_map.c.o
 
@@ -3498,9 +3660,21 @@ help:
 	@echo "... src/algoritm.o"
 	@echo "... src/algoritm.i"
 	@echo "... src/algoritm.s"
+	@echo "... src/check_1_line.o"
+	@echo "... src/check_1_line.i"
+	@echo "... src/check_1_line.s"
+	@echo "... src/check_last_line.o"
+	@echo "... src/check_last_line.i"
+	@echo "... src/check_last_line.s"
+	@echo "... src/check_mid_lines.o"
+	@echo "... src/check_mid_lines.i"
+	@echo "... src/check_mid_lines.s"
 	@echo "... src/check_valid.o"
 	@echo "... src/check_valid.i"
 	@echo "... src/check_valid.s"
+	@echo "... src/choose_player.o"
+	@echo "... src/choose_player.i"
+	@echo "... src/choose_player.s"
 	@echo "... src/filler.o"
 	@echo "... src/filler.i"
 	@echo "... src/filler.s"
@@ -3510,9 +3684,15 @@ help:
 	@echo "... src/ft_error.o"
 	@echo "... src/ft_error.i"
 	@echo "... src/ft_error.s"
+	@echo "... src/ft_min.o"
+	@echo "... src/ft_min.i"
+	@echo "... src/ft_min.s"
 	@echo "... src/get_next_line.o"
 	@echo "... src/get_next_line.i"
 	@echo "... src/get_next_line.s"
+	@echo "... src/make_map.o"
+	@echo "... src/make_map.i"
+	@echo "... src/make_map.s"
 	@echo "... src/read_map.o"
 	@echo "... src/read_map.i"
 	@echo "... src/read_map.s"
