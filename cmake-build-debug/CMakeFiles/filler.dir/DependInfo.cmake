@@ -114,6 +114,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/ctelma/Desktop/filler/src/check_mid_lines.c" "/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/src/check_mid_lines.c.o"
   "/Users/ctelma/Desktop/filler/src/check_valid.c" "/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/src/check_valid.c.o"
   "/Users/ctelma/Desktop/filler/src/choose_player.c" "/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/src/choose_player.c.o"
+  "/Users/ctelma/Desktop/filler/src/clean_memory.c" "/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/src/clean_memory.c.o"
   "/Users/ctelma/Desktop/filler/src/filler.c" "/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/src/filler.c.o"
   "/Users/ctelma/Desktop/filler/src/ft_min.c" "/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/src/ft_min.c.o"
   "/Users/ctelma/Desktop/filler/src/get_next_line.c" "/Users/ctelma/Desktop/filler/cmake-build-debug/CMakeFiles/filler.dir/src/get_next_line.c.o"

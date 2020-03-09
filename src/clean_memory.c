@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   choose_player.c                                    :+:      :+:    :+:   */
+/*   clean_memmory.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/08 18:56:32 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/08 18:56:32 by ctelma           ###   ########.fr       */
+/*   Created: 2020/03/09 16:05:56 by ctelma            #+#    #+#             */
+/*   Updated: 2020/03/09 16:10:17 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header/filler.h"
 
-void	choose_player(t_pl *play, char *s)
+static void	clean_map(int **map, int *s1, int *s2)
 {
-	play->player = ft_atoi(s + 10);
-	if (play->player == 1)
+	int i;
+
+	i = 0;
+	while (i < *s1)
 	{
-		play->player_c[0] = 'O';
-		play->player_c[1] = 'o';
+		free(map[i]);
+		i++;
 	}
-	else if (play->player == 2)
+	free(map);
+	*s1 = 0;
+	*s2 = 0;
+}
+
+void	clean_memory(t_pl *play)
+{
+	if (play)
 	{
-		play->player_c[0] = 'X';
-		play->player_c[1] = 'x';
+		if (play->m)
+			clean_map(play->m, &play->m_s_y, &play->m_s_x);
+		if (play->piece)
+			clean_map(play->piece, &play->p_s_y, &play->p_s_x);
 	}
 }

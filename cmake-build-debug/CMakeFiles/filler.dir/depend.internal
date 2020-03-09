@@ -382,6 +382,11 @@ CMakeFiles/filler.dir/src/choose_player.c.o
  /Users/ctelma/Desktop/filler/header/filler.h
  /Users/ctelma/Desktop/filler/libft/includes/libft.h
  /Users/ctelma/Desktop/filler/src/choose_player.c
+CMakeFiles/filler.dir/src/clean_memory.c.o
+ /Users/ctelma/Desktop/filler/ft_printf/header/ft_printf.h
+ /Users/ctelma/Desktop/filler/header/filler.h
+ /Users/ctelma/Desktop/filler/libft/includes/libft.h
+ /Users/ctelma/Desktop/filler/src/clean_memory.c
 CMakeFiles/filler.dir/src/filler.c.o
  /Users/ctelma/Desktop/filler/ft_printf/header/ft_printf.h
  /Users/ctelma/Desktop/filler/header/filler.h

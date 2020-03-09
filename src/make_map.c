@@ -73,6 +73,6 @@ void	make_map(t_pl *p)
 	}
 	//print_map(p->m, p->m_s_y, p->m_s_x);
 	reverse_cicle(p, i - 1, j - 1);
-	ft_printf("\n");
+	//ft_printf("\n");
 	//print_map(p->m, p->m_s_y, p->m_s_x);
 }

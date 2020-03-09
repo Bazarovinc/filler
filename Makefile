@@ -6,7 +6,7 @@
 #    By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/06 16:25:01 by ctelma            #+#    #+#              #
-#    Updated: 2020/03/08 18:55:30 by ctelma           ###   ########.fr        #
+#    Updated: 2020/03/09 14:56:26 by ctelma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,10 +23,10 @@ PATH_LIBFTPINTF = ./ft_printf/
 HEADER = filler.h
 
 OBG = src/algoritm.o src/check_valid.o src/filler.o src/solve.o \
-		src/ft_error.o src/get_next_line.o src/check_1_line.o \
+		src/get_next_line.o src/check_1_line.o \
 		src/read_map.o src/read_sizes.o src/set_mem.o src/check_last_line.o \
 		src/check_mid_lines.o src/ft_min.o src/choose_player.o src/make_map.o \
-		src/get_score.o src/solve.o src/stars.o
+		src/get_score.o src/stars.o src/clean_memory.o
 
 # COLORS
 

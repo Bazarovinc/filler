@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 12:46:53 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/09 11:08:58 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/09 15:08:07 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,11 @@ static void	read_map_str(t_pl *play, char *s, int i)
 	{
 		while ((s[j] >= '0' && s[j] <= '9') || s[j] == ' ')
 			j++;
-		if (s[j] == play->player_c)
-			play->m[i][k] = -1;
-		else if (s[j] != play->player_c && s[j] != '.')
-			play->m[i][k] = -2;
+		if ((s[j] == play->player_c[0] || s[j] == play->player_c[1]))
+			play->m[i][k] = ME;
+		else if ((s[j] != play->player_c[0] || s[j] != play->player_c[1])
+			&& s[j] != '.')
+			play->m[i][k] = EN;
 		else if (s[j] == '.')
 			play->m[i][k] = 0;
 		j++;

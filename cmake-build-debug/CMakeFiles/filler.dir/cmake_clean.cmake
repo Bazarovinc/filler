@@ -109,6 +109,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/filler.dir/src/check_mid_lines.c.o"
   "CMakeFiles/filler.dir/src/check_valid.c.o"
   "CMakeFiles/filler.dir/src/choose_player.c.o"
+  "CMakeFiles/filler.dir/src/clean_memory.c.o"
   "CMakeFiles/filler.dir/src/filler.c.o"
   "CMakeFiles/filler.dir/src/ft_min.c.o"
   "CMakeFiles/filler.dir/src/get_next_line.c.o"

@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 11:14:58 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/09 13:28:53 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/09 16:32:32 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,22 @@ static void	print_map(int **m, int s1, int s2)
 		}
 		ft_printf("\n");
 		i++;
+	}
+}
+
+void	algoritm(t_pl *play)
+{
+	while (1)
+	{
+		read_map(play);
+		//print_map(play->m, play->m_s_y, play->m_s_x);
+		read_piece(play);
+		solve(play);
+		ft_putnbr(play->tempy);
+		ft_putchar(' ');
+		ft_putnbr(play->tempx);
+		ft_putchar('\n');
+		clean_memory(play);
 	}
 }
 

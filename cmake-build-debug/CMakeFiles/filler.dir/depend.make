@@ -382,6 +382,11 @@ CMakeFiles/filler.dir/src/choose_player.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/choose_player.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/choose_player.c.o: ../src/choose_player.c
 
+CMakeFiles/filler.dir/src/clean_memory.c.o: ../ft_printf/header/ft_printf.h
+CMakeFiles/filler.dir/src/clean_memory.c.o: ../header/filler.h
+CMakeFiles/filler.dir/src/clean_memory.c.o: ../libft/includes/libft.h
+CMakeFiles/filler.dir/src/clean_memory.c.o: ../src/clean_memory.c
+
 CMakeFiles/filler.dir/src/filler.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/filler.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/filler.c.o: ../libft/includes/libft.h

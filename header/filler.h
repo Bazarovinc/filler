@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 11:17:35 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/09 14:42:37 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/09 16:10:17 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ typedef	struct s_pl		t_pl;
 struct					s_pl
 {
 	int		player;
-	char	player_c;
+	char	player_c[2];
 	int		**m;
 	int		m_s_x;
 	int		m_s_y;
@@ -64,14 +64,12 @@ int						get_next_line(const int fd, char **line);
 void					choose_player(t_pl *play, char *s);
 void					read_map(t_pl *play);
 int						**ft_set_matrix(int size_1, int size_2);
-void					del_mem(void);
 void					ft_set_struct(t_pl **play);
 void					algoritm(t_pl *play);
 void					check_correct_input(char *s, int flag);
 void					read_map_size(t_pl *play, char *s);
 void					read_piece_size(t_pl *play, char *s);
 void					read_piece(t_pl * play);
-void					first_push(t_pl *play);
 void					make_map(t_pl *p);
 void					choose_player(t_pl *play, char *s);
 void					check_1_line(t_pl *p, int i, int j, int c);
@@ -83,4 +81,5 @@ void					solve(t_pl *p);
 int						count_score(t_pl *p, int i, int j, int *score);
 int						count_before(t_pl *p, int j, int i, int *score);
 int						count_after(t_pl *p, int j, int i, int *score);
+void					clean_memory(t_pl *play);
 #endif

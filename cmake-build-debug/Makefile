@@ -3093,6 +3093,33 @@ src/choose_player.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/choose_player.c.s
 .PHONY : src/choose_player.c.s
 
+src/clean_memory.o: src/clean_memory.c.o
+
+.PHONY : src/clean_memory.o
+
+# target to build an object file
+src/clean_memory.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/clean_memory.c.o
+.PHONY : src/clean_memory.c.o
+
+src/clean_memory.i: src/clean_memory.c.i
+
+.PHONY : src/clean_memory.i
+
+# target to preprocess a source file
+src/clean_memory.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/clean_memory.c.i
+.PHONY : src/clean_memory.c.i
+
+src/clean_memory.s: src/clean_memory.c.s
+
+.PHONY : src/clean_memory.s
+
+# target to generate assembly for a file
+src/clean_memory.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/clean_memory.c.s
+.PHONY : src/clean_memory.c.s
+
 src/filler.o: src/filler.c.o
 
 .PHONY : src/filler.o
@@ -3702,6 +3729,9 @@ help:
 	@echo "... src/choose_player.o"
 	@echo "... src/choose_player.i"
 	@echo "... src/choose_player.s"
+	@echo "... src/clean_memory.o"
+	@echo "... src/clean_memory.i"
+	@echo "... src/clean_memory.s"
 	@echo "... src/filler.o"
 	@echo "... src/filler.i"
 	@echo "... src/filler.s"
