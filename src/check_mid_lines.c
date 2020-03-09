@@ -17,7 +17,7 @@ static void	check_left_corner(t_pl *p, int i, int j, int c)
 	int arr[5];
 
 	if ((p->m[i - 1][j] == c || p->m[i - 1][j + 1] == c || p->m[i][j + 1] == c
-		|| p->m[i + 1][j + 1] == c || p->m[i + 1][j] == c) && p->m[i][j] == 0)
+		|| p->m[i + 1][j + 1] == c || p->m[i + 1][j] == c) && p->m[i][j] >= 0)
 		p->m[i][j] = 1;
 	else if ((p->m[i - 1][j] > 0 || p->m[i - 1][j + 1] > 0 ||
 		p->m[i][j + 1] > 0 || p->m[i + 1][j + 1] > 0 || p->m[i + 1][j] > 0)

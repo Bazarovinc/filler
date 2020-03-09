@@ -387,22 +387,17 @@ CMakeFiles/filler.dir/src/filler.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/filler.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/filler.c.o: ../src/filler.c
 
-CMakeFiles/filler.dir/src/first_push.c.o: ../ft_printf/header/ft_printf.h
-CMakeFiles/filler.dir/src/first_push.c.o: ../header/filler.h
-CMakeFiles/filler.dir/src/first_push.c.o: ../libft/includes/libft.h
-CMakeFiles/filler.dir/src/first_push.c.o: ../src/first_push.c
-
-CMakeFiles/filler.dir/src/ft_error.c.o: ../ft_printf/header/ft_printf.h
-CMakeFiles/filler.dir/src/ft_error.c.o: ../header/filler.h
-CMakeFiles/filler.dir/src/ft_error.c.o: ../libft/includes/libft.h
-CMakeFiles/filler.dir/src/ft_error.c.o: ../src/ft_error.c
-
 CMakeFiles/filler.dir/src/ft_min.c.o: ../src/ft_min.c
 
 CMakeFiles/filler.dir/src/get_next_line.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/get_next_line.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/get_next_line.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/get_next_line.c.o: ../src/get_next_line.c
+
+CMakeFiles/filler.dir/src/get_score.c.o: ../ft_printf/header/ft_printf.h
+CMakeFiles/filler.dir/src/get_score.c.o: ../header/filler.h
+CMakeFiles/filler.dir/src/get_score.c.o: ../libft/includes/libft.h
+CMakeFiles/filler.dir/src/get_score.c.o: ../src/get_score.c
 
 CMakeFiles/filler.dir/src/make_map.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/make_map.c.o: ../header/filler.h
@@ -423,4 +418,14 @@ CMakeFiles/filler.dir/src/set_mem.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/set_mem.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/set_mem.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/set_mem.c.o: ../src/set_mem.c
+
+CMakeFiles/filler.dir/src/solve.c.o: ../ft_printf/header/ft_printf.h
+CMakeFiles/filler.dir/src/solve.c.o: ../header/filler.h
+CMakeFiles/filler.dir/src/solve.c.o: ../libft/includes/libft.h
+CMakeFiles/filler.dir/src/solve.c.o: ../src/solve.c
+
+CMakeFiles/filler.dir/src/stars.c.o: ../ft_printf/header/ft_printf.h
+CMakeFiles/filler.dir/src/stars.c.o: ../header/filler.h
+CMakeFiles/filler.dir/src/stars.c.o: ../libft/includes/libft.h
+CMakeFiles/filler.dir/src/stars.c.o: ../src/stars.c
 

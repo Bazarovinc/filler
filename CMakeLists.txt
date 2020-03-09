@@ -117,12 +117,10 @@ add_executable(filler
         src/filler.c
         header/filler.h
         src/get_next_line.c
-        src/ft_error.c
         src/set_mem.c
         src/algoritm.c
         src/check_valid.c
         src/read_map.c
         src/read_sizes.c
-        src/first_push.c
         src/choose_player.c
-        src/make_map.c src/check_1_line.c src/ft_min.c src/check_last_line.c src/check_mid_lines.c src/choose_player.c)
+        src/make_map.c src/check_1_line.c src/ft_min.c src/check_last_line.c src/check_mid_lines.c src/choose_player.c src/solve.c src/get_score.c src/stars.c)

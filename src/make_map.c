@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/08 13:15:33 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/08 18:47:01 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/09 11:31:11 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,25 @@ static void	reverse_cicle(t_pl *p, int i, int j)
 	}
 }
 
+static void	print_map(int **m, int s1, int s2)
+{
+	int i;
+	int j;
+
+	i = 0;
+	while (i < s1)
+	{
+		j = 0;
+		while (j < s2)
+		{
+			ft_printf("%3d", m[i][j]);
+			j++;
+		}
+		ft_printf("\n");
+		i++;
+	}
+}
+
 void	make_map(t_pl *p)
 {
 	int i;
@@ -52,5 +71,8 @@ void	make_map(t_pl *p)
 		}
 		i++;
 	}
+	//print_map(p->m, p->m_s_y, p->m_s_x);
 	reverse_cicle(p, i - 1, j - 1);
+	ft_printf("\n");
+	//print_map(p->m, p->m_s_y, p->m_s_x);
 }

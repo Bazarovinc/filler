@@ -22,10 +22,11 @@ PATH_LIBFTPINTF = ./ft_printf/
 
 HEADER = filler.h
 
-OBG = src/algoritm.o src/check_valid.o src/filler.o src/first_push.o \
+OBG = src/algoritm.o src/check_valid.o src/filler.o src/solve.o \
 		src/ft_error.o src/get_next_line.o src/check_1_line.o \
 		src/read_map.o src/read_sizes.o src/set_mem.o src/check_last_line.o \
-		src/check_mid_lines.o src/ft_min.o src/choose_player.o src/make_map.o
+		src/check_mid_lines.o src/ft_min.o src/choose_player.o src/make_map.o \
+		src/get_score.o src/solve.o src/stars.o
 
 # COLORS
 

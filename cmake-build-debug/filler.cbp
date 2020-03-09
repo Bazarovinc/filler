@@ -428,16 +428,13 @@
 		<Unit filename="/Users/ctelma/Desktop/filler/src/filler.c">
 			<Option target="filler"/>
 		</Unit>
-		<Unit filename="/Users/ctelma/Desktop/filler/src/first_push.c">
-			<Option target="filler"/>
-		</Unit>
-		<Unit filename="/Users/ctelma/Desktop/filler/src/ft_error.c">
-			<Option target="filler"/>
-		</Unit>
 		<Unit filename="/Users/ctelma/Desktop/filler/src/ft_min.c">
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/ctelma/Desktop/filler/src/get_next_line.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="/Users/ctelma/Desktop/filler/src/get_score.c">
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/ctelma/Desktop/filler/src/make_map.c">
@@ -450,6 +447,12 @@
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/ctelma/Desktop/filler/src/set_mem.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="/Users/ctelma/Desktop/filler/src/solve.c">
+			<Option target="filler"/>
+		</Unit>
+		<Unit filename="/Users/ctelma/Desktop/filler/src/stars.c">
 			<Option target="filler"/>
 		</Unit>
 		<Unit filename="/Users/ctelma/Desktop/filler/CMakeLists.txt">

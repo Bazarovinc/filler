@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 12:46:53 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/08 19:08:34 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/09 11:08:58 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,30 +58,15 @@ void		read_piece(t_pl * play)
 	int		i;
 
 	i = 0;
+	get_next_line(0, &s);
+	read_piece_size(play, s);
+	free(s);
+	play->piece = ft_set_matrix(play->p_s_y, play->p_s_x);
 	while (i < play->p_s_y)
 	{
 		get_next_line(0, &s);
 		read_piece_str(play, s, i);
 		free(s);
-		i++;
-	}
-}
-
-static void	print_map(int **m, int s1, int s2)
-{
-	int i;
-	int j;
-
-	i = 0;
-	while (i < s1)
-	{
-		j = 0;
-		while (j < s2)
-		{
-			ft_printf("%3d", m[i][j]);
-			j++;
-		}
-		ft_printf("\n");
 		i++;
 	}
 }
@@ -92,6 +77,10 @@ void		read_map(t_pl *play)
 	int		i;
 
 	i = 0;
+	get_next_line(0, &s);
+	read_map_size(play, s);
+	play->m = ft_set_matrix(play->m_s_y, play->m_s_x);
+	FT_SKIP(s);
 	while (i < play->m_s_y)
 	{
 		get_next_line(0, &s);
@@ -99,6 +88,5 @@ void		read_map(t_pl *play)
 		free(s);
 		i++;
 	}
-	print_map(play->m, play->m_s_y, play->m_s_x);
 	make_map(play);
 }

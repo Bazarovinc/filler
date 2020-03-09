@@ -3120,60 +3120,6 @@ src/filler.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/filler.c.s
 .PHONY : src/filler.c.s
 
-src/first_push.o: src/first_push.c.o
-
-.PHONY : src/first_push.o
-
-# target to build an object file
-src/first_push.c.o:
-	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/first_push.c.o
-.PHONY : src/first_push.c.o
-
-src/first_push.i: src/first_push.c.i
-
-.PHONY : src/first_push.i
-
-# target to preprocess a source file
-src/first_push.c.i:
-	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/first_push.c.i
-.PHONY : src/first_push.c.i
-
-src/first_push.s: src/first_push.c.s
-
-.PHONY : src/first_push.s
-
-# target to generate assembly for a file
-src/first_push.c.s:
-	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/first_push.c.s
-.PHONY : src/first_push.c.s
-
-src/ft_error.o: src/ft_error.c.o
-
-.PHONY : src/ft_error.o
-
-# target to build an object file
-src/ft_error.c.o:
-	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/ft_error.c.o
-.PHONY : src/ft_error.c.o
-
-src/ft_error.i: src/ft_error.c.i
-
-.PHONY : src/ft_error.i
-
-# target to preprocess a source file
-src/ft_error.c.i:
-	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/ft_error.c.i
-.PHONY : src/ft_error.c.i
-
-src/ft_error.s: src/ft_error.c.s
-
-.PHONY : src/ft_error.s
-
-# target to generate assembly for a file
-src/ft_error.c.s:
-	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/ft_error.c.s
-.PHONY : src/ft_error.c.s
-
 src/ft_min.o: src/ft_min.c.o
 
 .PHONY : src/ft_min.o
@@ -3227,6 +3173,33 @@ src/get_next_line.s: src/get_next_line.c.s
 src/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/get_next_line.c.s
 .PHONY : src/get_next_line.c.s
+
+src/get_score.o: src/get_score.c.o
+
+.PHONY : src/get_score.o
+
+# target to build an object file
+src/get_score.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/get_score.c.o
+.PHONY : src/get_score.c.o
+
+src/get_score.i: src/get_score.c.i
+
+.PHONY : src/get_score.i
+
+# target to preprocess a source file
+src/get_score.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/get_score.c.i
+.PHONY : src/get_score.c.i
+
+src/get_score.s: src/get_score.c.s
+
+.PHONY : src/get_score.s
+
+# target to generate assembly for a file
+src/get_score.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/get_score.c.s
+.PHONY : src/get_score.c.s
 
 src/make_map.o: src/make_map.c.o
 
@@ -3335,6 +3308,60 @@ src/set_mem.s: src/set_mem.c.s
 src/set_mem.c.s:
 	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/set_mem.c.s
 .PHONY : src/set_mem.c.s
+
+src/solve.o: src/solve.c.o
+
+.PHONY : src/solve.o
+
+# target to build an object file
+src/solve.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/solve.c.o
+.PHONY : src/solve.c.o
+
+src/solve.i: src/solve.c.i
+
+.PHONY : src/solve.i
+
+# target to preprocess a source file
+src/solve.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/solve.c.i
+.PHONY : src/solve.c.i
+
+src/solve.s: src/solve.c.s
+
+.PHONY : src/solve.s
+
+# target to generate assembly for a file
+src/solve.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/solve.c.s
+.PHONY : src/solve.c.s
+
+src/stars.o: src/stars.c.o
+
+.PHONY : src/stars.o
+
+# target to build an object file
+src/stars.c.o:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/stars.c.o
+.PHONY : src/stars.c.o
+
+src/stars.i: src/stars.c.i
+
+.PHONY : src/stars.i
+
+# target to preprocess a source file
+src/stars.c.i:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/stars.c.i
+.PHONY : src/stars.c.i
+
+src/stars.s: src/stars.c.s
+
+.PHONY : src/stars.s
+
+# target to generate assembly for a file
+src/stars.c.s:
+	$(MAKE) -f CMakeFiles/filler.dir/build.make CMakeFiles/filler.dir/src/stars.c.s
+.PHONY : src/stars.c.s
 
 # Help Target
 help:
@@ -3678,18 +3705,15 @@ help:
 	@echo "... src/filler.o"
 	@echo "... src/filler.i"
 	@echo "... src/filler.s"
-	@echo "... src/first_push.o"
-	@echo "... src/first_push.i"
-	@echo "... src/first_push.s"
-	@echo "... src/ft_error.o"
-	@echo "... src/ft_error.i"
-	@echo "... src/ft_error.s"
 	@echo "... src/ft_min.o"
 	@echo "... src/ft_min.i"
 	@echo "... src/ft_min.s"
 	@echo "... src/get_next_line.o"
 	@echo "... src/get_next_line.i"
 	@echo "... src/get_next_line.s"
+	@echo "... src/get_score.o"
+	@echo "... src/get_score.i"
+	@echo "... src/get_score.s"
 	@echo "... src/make_map.o"
 	@echo "... src/make_map.i"
 	@echo "... src/make_map.s"
@@ -3702,6 +3726,12 @@ help:
 	@echo "... src/set_mem.o"
 	@echo "... src/set_mem.i"
 	@echo "... src/set_mem.s"
+	@echo "... src/solve.o"
+	@echo "... src/solve.i"
+	@echo "... src/solve.s"
+	@echo "... src/stars.o"
+	@echo "... src/stars.i"
+	@echo "... src/stars.s"
 .PHONY : help
 
 

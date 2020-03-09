@@ -38,4 +38,8 @@ void	ft_set_struct(t_pl **play)
 	(*play)->player = 0;
 	(*play)->p_s_x = 0;
 	(*play)->p_s_y = 0;
+	(*play)->i = 0;
+	(*play)->j = 0;
+	(*play)->x = 0;
+	(*play)->y = 0;
 }
