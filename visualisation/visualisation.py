@@ -45,13 +45,21 @@ def run_game():
     pygame.init()
     filler_settings = Settings()
     screen = pygame.display.set_mode((filler_settings.screen_width, filler_settings.screen_height))
+    white = pygame.Color(255, 255, 255)
+
     pygame.display.set_caption("Filler")
     # Создание кнопки Play
-    play_button = Button(screen, "Start")
+    #play_button = Button(screen, "Start")
+    #screen.fill(white)
+    for y in range(15):
+        for x in range(17):
+            rect = pygame.Rect(x * 5 + 1, y * 5 + 1, 5, 5)
+            pygame.draw.rect(screen, (255, 0, 0), rect)
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
+        screen.fill(white)
 
 
-first_input()
+run_game()
