@@ -46,7 +46,7 @@ def run_game():
     filler_settings = Settings()
     screen = pygame.display.set_mode((filler_settings.screen_width, filler_settings.screen_height))
     white = pygame.Color(255, 255, 255)
-
+    screen.fill(white)
     pygame.display.set_caption("Filler")
     # Создание кнопки Play
     #play_button = Button(screen, "Start")
@@ -59,7 +59,7 @@ def run_game():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
-        screen.fill(white)
+
 
 
 run_game()
