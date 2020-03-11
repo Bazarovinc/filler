@@ -3,6 +3,8 @@ from typing import Union
 from players import Player
 from button import Button
 from settings import Settings
+import functions as f
+
 
 import pygame
 import os
@@ -40,26 +42,51 @@ def first_input():
     return True
 
 
+def create_grid(f_s, locked_positions={}):
+    grid = [[(0, 0, 0) for x in range(int(f_s.map_width / f_s.block_size))] for x in range(int(f_s.map_width / f_s.block_size))]
+
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            if (j, i) in locked_positions:
+                c = locked_positions[(j, i)]
+                grid[i][j] = c
+    return grid
+
+
+def draw_grid(surface, grid, f_s):
+
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            pygame.draw.rect(surface, grid[i][j], (f_s.top_left_x + j * f_s.block_size + 1, f_s.top_left_y + i * f_s.block_size + 1,
+                                                    f_s.block_size, f_s.block_size), 0)
+    pygame.draw.rect(surface, pygame.Color("green"), (f_s.top_left_x, f_s.top_left_y, f_s.map_width, f_s.map_height), 5)
+
+
+def draw_window(surface, grid, filler_settings):
+    surface.fill(filler_settings.bg_color)
+    pygame.font.init()
+    font = pygame.font.SysFont('comicsans', 60)
+    label = font.render('FILLER', 1, (255, 0, 0))
+    surface.blit(label, (filler_settings.top_left_x + filler_settings.map_width / 2 - (label.get_width() / 2), 30))
+    draw_grid(surface, grid, filler_settings)
+    pygame.display.update()
+
 def run_game():
-    # Initialise pygame
-    pygame.init()
-    filler_settings = Settings()
-    screen = pygame.display.set_mode((filler_settings.screen_width, filler_settings.screen_height))
-    white = pygame.Color(255, 255, 255)
-    screen.fill(white)
+    settings = Settings()
+    win = pygame.display.set_mode((settings.screen_width, settings.screen_height))
+    locked_positions = {}  # (x,y):(255,0,0)
+    grid = create_grid(settings, locked_positions)
+    clock = pygame.time.Clock()
+    run = True
     pygame.display.set_caption("Filler")
-    # Создание кнопки Play
-    #play_button = Button(screen, "Start")
-    #screen.fill(white)
-    for y in range(15):
-        for x in range(17):
-            rect = pygame.Rect(x * 5 + 1, y * 5 + 1, 5, 5)
-            pygame.draw.rect(screen, (255, 0, 0), rect)
-    while True:
+    while run:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
-
+            if event.type == pygame.K_q:
+                run = False
+                sys.exit()
+        draw_window(win, grid, settings)
 
 
 run_game()
