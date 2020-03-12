@@ -6,7 +6,6 @@ class Player():
         self.score = 0
         self.printed_name = self.make_name()
         self.player_symb = ''
-        self.choose_symb()
 
     def make_name(self):
         line = self.player_name.split(".")
@@ -15,6 +14,7 @@ class Player():
 
     def get_number_of_player(self, n):
         self.player_number = int(n)
+        self.choose_symb()
 
     def choose_symb(self):
         if self.player_number == 1:
