@@ -4,6 +4,7 @@ class Player():
         self.player_name = player_name
         self.player_number = 0
         self.score = 0
+        self.flag_put = False
         self.printed_name = self.make_name()
         self.player_symb = ''
 
@@ -21,5 +22,3 @@ class Player():
             self.player_symb = 'oO'
         elif self.player_number == 2:
             self.player_symb = 'xX'
-
-

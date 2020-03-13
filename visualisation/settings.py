@@ -26,5 +26,5 @@ class Settings():
             self.map_height = self.block_size * self.rows
         elif self.rows == 100:
             self.block_size = 8
-            self.map_width = self.block_size * self.columns + 5
-            self.map_height = self.block_size * self.rows + 5
+            self.map_width = self.block_size * self.columns + 3
+            self.map_height = self.block_size * self.rows + 3
