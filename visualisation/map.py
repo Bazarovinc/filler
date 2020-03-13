@@ -40,8 +40,8 @@ class Map():
                 pygame.draw.line(surface, pygame.Color("grey"), [f_s.top_left_x + j * f_s.block_size, f_s.top_left_y],
                                  [f_s.top_left_x + j * f_s.block_size, f_s.top_left_y + f_s.block_size * f_s.rows])
 
-        pygame.draw.rect(surface, pygame.Color("green"),
-                         (f_s.top_left_x, f_s.top_left_y, f_s.map_width, f_s.map_height), 5)
+        #pygame.draw.rect(surface, pygame.Color("white"),
+                         #(f_s.top_left_x, f_s.top_left_y, f_s.map_width, f_s.map_height), 5)
 
     def read_map(self, flag, player_1, player_2):
         if flag == 0:

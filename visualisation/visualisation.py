@@ -28,11 +28,12 @@ def run_game(player_1, player_2):
             if event.type == pygame.QUIT:
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
-                if event.type == pygame.K_q:
+                if event.type == pygame.K_ESCAPE:
                     run = False
                     sys.exit()
         f.draw_window(win, settings, map)
-        flag = map.read_map(flag, player_1, player_2)
+        if flag == 1:
+            flag = map.read_map(flag, player_1, player_2)
         if flag == 1:
             f.skip_lines()
         print("1:", player_1.score)

@@ -4,8 +4,8 @@ from players import Player
 def draw_window(surface, filler_settings, map):
     surface.fill(filler_settings.bg_color)
     pygame.font.init()
-    font = pygame.font.SysFont("comicsansms", 60)
-    label = font.render('FILLER', 1, (255, 0, 0))
+    font = pygame.font.SysFont("comicsansms", 150)
+    label = font.render('FILLER', 1, (0, 153, 0))
     surface.blit(label, (filler_settings.top_left_x + filler_settings.map_width / 2 - (label.get_width() / 2), 30))
     map.draw_map(surface, filler_settings)
     pygame.display.flip()
