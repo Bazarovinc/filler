@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/08 18:56:32 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/08 18:56:32 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/15 15:52:26 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,14 @@ void	choose_player(t_pl *play, char *s)
 	{
 		play->player_c[0] = 'O';
 		play->player_c[1] = 'o';
+		play->en_c[0] = 'X';
+		play->en_c[1] = 'x';
 	}
 	else if (play->player == 2)
 	{
 		play->player_c[0] = 'X';
 		play->player_c[1] = 'x';
+		play->en_c[0] = 'O';
+		play->en_c[1] = 'o';
 	}
 }

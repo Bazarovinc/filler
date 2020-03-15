@@ -6,7 +6,7 @@
 #    By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/06 16:25:01 by ctelma            #+#    #+#              #
-#    Updated: 2020/03/09 14:56:26 by ctelma           ###   ########.fr        #
+#    Updated: 2020/03/15 14:44:15 by ctelma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ FLAG = -Wall -Wextra -Werror
 
 FLAGINC = -I
 
-PATH_LIBFTPINTF = ./ft_printf/
+PATH_LIB = ./libft/
 
 HEADER = filler.h
 
@@ -39,10 +39,10 @@ RESET = \033[0m
 all: lib $(NAME)
 
 lib:
-	@make $(FLAG) -C $(PATH_LIBFTPINTF)
+	@make $(FLAG) -C $(PATH_LIB)
 
 $(NAME): $(OBG)
-	@$(CC) -I $(HEADER) -o $(NAME) $(OBG) -L $(PATH_LIBFTPINTF) -lftprintf
+	@$(CC) -I $(HEADER) -o $(NAME) $(OBG) -L $(PATH_LIB) -lft
 	@echo "\n$(NAME): $(GREEN)object files were created$(RESET)"
 	@echo "$(NAME): $(GREEN)$(NAME) was created$(RESET)"
 
@@ -50,12 +50,12 @@ $(NAME): $(OBG)
 	@$(CC) $(FLAGINC) $(FLAG) -MD -c  $< -o $@
 
 clean:
-	@make -C $(PATH_LIBFTPINTF) clean
+	@make -C $(PATH_LIB) clean
 	@rm -f $(OBG)
 	@echo "$(NAME): $(RED)object files were deleted$(RESET)"
 
 fclean: clean
-	@make -C $(PATH_LIBFTPINTF) fclean
+	@make -C $(PATH_LIB) fclean
 	@rm -f $(NAME)
 	@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
 

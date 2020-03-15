@@ -6,14 +6,14 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 11:17:35 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/09 16:10:17 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/15 17:20:35 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLER_H
 #define FILLER_H
 
-# include "../ft_printf/header/ft_printf.h"
+# include "../libft/includes/libft.h"
 # include <fcntl.h>
 
 # define BUFF_SIZE 1
@@ -36,6 +36,7 @@ struct					s_pl
 {
 	int		player;
 	char	player_c[2];
+	char 	en_c[2];
 	int		**m;
 	int		m_s_x;
 	int		m_s_y;
@@ -58,18 +59,19 @@ struct					s_pl
 	int 	tempi;
 	int 	tempj;
 	int		flag_star;
+	int 	freed_p;
+	int 	freed_m;
 };
 
 int						get_next_line(const int fd, char **line);
 void					choose_player(t_pl *play, char *s);
-void					read_map(t_pl *play);
-int						**ft_set_matrix(int size_1, int size_2);
+int						read_map(t_pl *play);
+int						**ft_set_matrix(int size_1, int size_2, int *freed);
 void					ft_set_struct(t_pl **play);
-void					algoritm(t_pl *play);
-void					check_correct_input(char *s, int flag);
-void					read_map_size(t_pl *play, char *s);
-void					read_piece_size(t_pl *play, char *s);
-void					read_piece(t_pl * play);
+int						check_correct_input(char *s, int flag);
+int						read_map_size(t_pl *play, char *s);
+int						read_piece_size(t_pl *play, char *s);
+int						read_piece(t_pl * play);
 void					make_map(t_pl *p);
 void					choose_player(t_pl *play, char *s);
 void					check_1_line(t_pl *p, int i, int j, int c);

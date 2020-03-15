@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/09 16:05:56 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/09 16:10:17 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/15 17:15:43 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,15 @@ void	clean_memory(t_pl *play)
 {
 	if (play)
 	{
-		if (play->m)
+		if (play->m && play->freed_m == 0)
+		{
 			clean_map(play->m, &play->m_s_y, &play->m_s_x);
-		if (play->piece)
+			play->freed_m = 1;
+		}
+		if (play->piece && play->freed_p == 0)
+		{
 			clean_map(play->piece, &play->p_s_y, &play->p_s_x);
+			play->freed_p = 1;
+		}
 	}
 }

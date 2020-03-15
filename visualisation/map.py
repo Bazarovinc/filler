@@ -40,9 +40,6 @@ class Map():
                 pygame.draw.line(surface, pygame.Color("grey"), [f_s.top_left_x + j * f_s.block_size, f_s.top_left_y],
                                  [f_s.top_left_x + j * f_s.block_size, f_s.top_left_y + f_s.block_size * f_s.rows])
 
-        #pygame.draw.rect(surface, pygame.Color("white"),
-                         #(f_s.top_left_x, f_s.top_left_y, f_s.map_width, f_s.map_height), 5)
-
     def read_map(self, flag, player_1, player_2):
         if flag == 0:
             skip = 1
@@ -51,9 +48,9 @@ class Map():
         while skip != 0:
             s = f.check_input()
             if s == '-1':
-                return -1
-            if "==" in s:
                 return 0
+            if "==" in s:
+                return -1
             if "Piece" in s:
                 size = s.split()
                 for i in range(int(size[1]) + 3):

@@ -352,84 +352,68 @@ CMakeFiles/filler.dir/libft/ft_tolower.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
 CMakeFiles/filler.dir/libft/ft_toupper.c.o: ../libft/includes/libft.h
 
-CMakeFiles/filler.dir/src/algoritm.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/algoritm.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/algoritm.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/algoritm.c.o: ../src/algoritm.c
 
-CMakeFiles/filler.dir/src/check_1_line.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/check_1_line.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/check_1_line.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/check_1_line.c.o: ../src/check_1_line.c
 
-CMakeFiles/filler.dir/src/check_last_line.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/check_last_line.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/check_last_line.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/check_last_line.c.o: ../src/check_last_line.c
 
-CMakeFiles/filler.dir/src/check_mid_lines.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/check_mid_lines.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/check_mid_lines.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/check_mid_lines.c.o: ../src/check_mid_lines.c
 
-CMakeFiles/filler.dir/src/check_valid.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/check_valid.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/check_valid.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/check_valid.c.o: ../src/check_valid.c
 
-CMakeFiles/filler.dir/src/choose_player.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/choose_player.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/choose_player.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/choose_player.c.o: ../src/choose_player.c
 
-CMakeFiles/filler.dir/src/clean_memory.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/clean_memory.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/clean_memory.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/clean_memory.c.o: ../src/clean_memory.c
 
-CMakeFiles/filler.dir/src/filler.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/filler.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/filler.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/filler.c.o: ../src/filler.c
 
 CMakeFiles/filler.dir/src/ft_min.c.o: ../src/ft_min.c
 
-CMakeFiles/filler.dir/src/get_next_line.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/get_next_line.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/get_next_line.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/get_next_line.c.o: ../src/get_next_line.c
 
-CMakeFiles/filler.dir/src/get_score.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/get_score.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/get_score.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/get_score.c.o: ../src/get_score.c
 
-CMakeFiles/filler.dir/src/make_map.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/make_map.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/make_map.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/make_map.c.o: ../src/make_map.c
 
-CMakeFiles/filler.dir/src/read_map.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/read_map.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/read_map.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/read_map.c.o: ../src/read_map.c
 
-CMakeFiles/filler.dir/src/read_sizes.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/read_sizes.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/read_sizes.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/read_sizes.c.o: ../src/read_sizes.c
 
-CMakeFiles/filler.dir/src/set_mem.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/set_mem.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/set_mem.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/set_mem.c.o: ../src/set_mem.c
 
-CMakeFiles/filler.dir/src/solve.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/solve.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/solve.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/solve.c.o: ../src/solve.c
 
-CMakeFiles/filler.dir/src/stars.c.o: ../ft_printf/header/ft_printf.h
 CMakeFiles/filler.dir/src/stars.c.o: ../header/filler.h
 CMakeFiles/filler.dir/src/stars.c.o: ../libft/includes/libft.h
 CMakeFiles/filler.dir/src/stars.c.o: ../src/stars.c

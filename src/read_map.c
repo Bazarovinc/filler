@@ -6,13 +6,13 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 12:46:53 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/09 15:08:07 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/15 17:12:18 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header/filler.h"
 
-static void	read_map_str(t_pl *play, char *s, int i)
+static int	read_map_str(t_pl *play, char *s, int i)
 {
 	int j;
 	int k;
@@ -25,17 +25,27 @@ static void	read_map_str(t_pl *play, char *s, int i)
 			j++;
 		if ((s[j] == play->player_c[0] || s[j] == play->player_c[1]))
 			play->m[i][k] = ME;
-		else if ((s[j] != play->player_c[0] || s[j] != play->player_c[1])
+		else if ((s[j] == play->en_c[0] || s[j] == play->en_c[1])
 			&& s[j] != '.')
 			play->m[i][k] = EN;
 		else if (s[j] == '.')
 			play->m[i][k] = 0;
+		else
+			return (1);
 		j++;
 		k++;
 	}
+	return (0);
 }
 
-static void	read_piece_str(t_pl *play, char *s, int i)
+static int 	check_line_number(char *s, int i)
+{
+	if (ft_atoi(s) != i)
+		return (1);
+	return (0);
+}
+
+static int	read_piece_str(t_pl *play, char *s, int i)
 {
 	int j;
 	int k;
@@ -48,46 +58,58 @@ static void	read_piece_str(t_pl *play, char *s, int i)
 			play->piece[i][k] = 0;
 		else if (s[j] == '*')
 			play->piece[i][k] = 1;
+		else
+			return (1);
 		k++;
 		j++;
 	}
+	return (0);
 }
 
-void		read_piece(t_pl * play)
+int			read_piece(t_pl * play)
 {
 	char	*s;
 	int		i;
 
 	i = 0;
-	get_next_line(0, &s);
-	read_piece_size(play, s);
+	if (get_next_line(0, &s) == -1 || read_piece_size(play, s))
+		return (1);
 	free(s);
-	play->piece = ft_set_matrix(play->p_s_y, play->p_s_x);
+	play->piece = ft_set_matrix(play->p_s_y, play->p_s_x, &play->freed_p);
 	while (i < play->p_s_y)
 	{
-		get_next_line(0, &s);
-		read_piece_str(play, s, i);
+		if (get_next_line(0, &s) == -1)
+			return (1);
+		if (s[0] == '\0')
+			return (1);
+		if (read_piece_str(play, s, i))
+			return (1);
 		free(s);
 		i++;
 	}
+	return (0);
 }
 
-void		read_map(t_pl *play)
+int		read_map(t_pl *play)
 {
 	char	*s;
 	int		i;
 
 	i = 0;
 	get_next_line(0, &s);
-	read_map_size(play, s);
-	play->m = ft_set_matrix(play->m_s_y, play->m_s_x);
+	if (read_map_size(play, s))
+		return (1);
+	play->m = ft_set_matrix(play->m_s_y, play->m_s_x, &play->freed_m);
+	free(s);
 	FT_SKIP(s);
 	while (i < play->m_s_y)
 	{
 		get_next_line(0, &s);
-		read_map_str(play, s, i);
+		if (check_line_number(s, i) || read_map_str(play, s, i))
+			return (1);
 		free(s);
 		i++;
 	}
 	make_map(play);
+	return (0);
 }

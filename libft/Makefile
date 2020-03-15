@@ -40,21 +40,31 @@ SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c \
 	ft_islower.c ft_isupper.c ft_iswhitespace.c ft_swap.c ft_sqrt.c \
 	ft_recursive_factorial.c ft_issymb.c
 
+# COLORS
+
+GREEN = \033[0;32m
+RED = \033[0;31m
+RESET = \033[0m
+
 OBJ = $(subst .c,.o,$(SRC))
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+	@ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
+	@echo "\n$(NAME): $(GREEN)object files were created$(RESET)"
+	@echo "$(NAME): $(GREEN)$(NAME) was created$(RESET)"
 
-%.o: %.c
-	$(CC) $(CFLAGS) $< -c -o  $@
+%.o: %.c %.h
+	@$(CC) $(CFLAGS) $< -c -o  $@
 
 clean:
-	$(RM) -f $(OBJ)
+	@$(RM) -f $(OBJ)
+	@echo "$(NAME): $(RED)object files were deleted$(RESET)"
 
 fclean: clean
-	$(RM) -f $(NAME)
+	@$(RM) -f $(NAME)
+	@echo "$(NAME): $(RED)$(NAME) was deleted$(RESET)"
 
 re: fclean all

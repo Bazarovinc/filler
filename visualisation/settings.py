@@ -5,7 +5,7 @@ class Settings():
     def __init__(self, rows, columns):
         self.screen_width = 1800
         self.screen_height = 1000
-        self.bg_color = 255, 255, 255
+        self.bg_color = 224, 224, 224
         self.rows = int(rows)
         self.columns = int(columns)
         self.block_size = 0

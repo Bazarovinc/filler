@@ -6,38 +6,20 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 11:14:58 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/09 16:32:32 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/15 16:26:05 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header/filler.h"
 
-static void	print_map(int **m, int s1, int s2)
-{
-	int i;
-	int j;
-
-	i = 0;
-	while (i < s1)
-	{
-		j = 0;
-		while (j < s2)
-		{
-			ft_printf("%3d", m[i][j]);
-			j++;
-		}
-		ft_printf("\n");
-		i++;
-	}
-}
-
-void	algoritm(t_pl *play)
+static int	algoritm(t_pl *play)
 {
 	while (1)
 	{
-		read_map(play);
-		//print_map(play->m, play->m_s_y, play->m_s_x);
-		read_piece(play);
+		if (read_map(play))
+			return (1);
+		if (read_piece(play))
+			return (1);
 		solve(play);
 		ft_putnbr(play->tempy);
 		ft_putchar(' ');
@@ -45,17 +27,29 @@ void	algoritm(t_pl *play)
 		ft_putchar('\n');
 		clean_memory(play);
 	}
+	return (0);
 }
 
-static void	first_read(t_pl *play)
+static int	first_read(t_pl *play)
 {
 	char *s;
 
 	get_next_line(0, &s);
-	check_correct_input(s, 0);
+	if (check_correct_input(s, 0))
+	{
+		free(play);
+		free(s);
+		return (1);
+	}
 	choose_player(play, s);
 	free(s);
-	algoritm(play);
+	if (algoritm(play))
+	{
+		clean_memory(play);
+		free(play);
+		return (1);
+	}
+	return (0);
 }
 
 int		main(void)
@@ -63,6 +57,8 @@ int		main(void)
 	t_pl *play;
 
 	ft_set_struct(&play);
-	first_read(play);
+	if (first_read(play))
+		return (1);
+	free(play);
 	return (0);
 }
