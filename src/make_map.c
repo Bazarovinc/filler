@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/08 13:15:33 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/09 11:31:11 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/17 12:48:37 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static void	reverse_cicle(t_pl *p, int i, int j)
 	}
 }
 
-void	make_map(t_pl *p)
+void		make_map(t_pl *p)
 {
 	int i;
 	int j;

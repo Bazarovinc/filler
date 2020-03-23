@@ -1,4 +1,5 @@
 import pygame
+import sys
 from players import Player
 
 
@@ -58,14 +59,24 @@ def draw_player_info(player_1, player_2, flag, f_s, surface):
     font_2_2 = pygame.font.SysFont("comicsansms", 60)
     score_2 = font_2_2.render(str(player_2.score), 1, pygame.Color(color2))
     surface.blit(score_2, (f_s.screen_width - 50 - score_2.get_width(), (name_2.get_height() + 55)))
+    if flag == -1:
+        winner_font = pygame.font.SysFont("comicsansms", 60)
+        winner_name = 'win: '
+        winner_color = 255, 215, 0
+        if player_1.score > player_2.score:
+            winner_name += player_1.printed_name
+        elif player_1.score < player_2.score:
+            winner_name += player_2.printed_name
+        winner = winner_font.render(winner_name, 1, winner_color)
+        surface.blit(winner, (f_s.screen_width / 2 - (winner.get_width() / 2), 190))
 
 
 def draw_window(surface, filler_settings, map, p1, p2, flag):
     surface.fill(filler_settings.bg_color)
     pygame.font.init()
     font = pygame.font.SysFont("comicsansms", 150)
-    label = font.render('FILLER', 1, (0, 153, 0))
-    surface.blit(label, (filler_settings.top_left_x + filler_settings.map_width / 2 - (label.get_width() / 2), 30))
+    label = font.render('FILLER', 1, (255, 20, 147))
+    surface.blit(label, (filler_settings.screen_width / 2 - (label.get_width() / 2), 30))
     draw_player_info(p1, p2, flag, filler_settings, surface)
     map.draw_map(surface, filler_settings)
     pygame.display.flip()

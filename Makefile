@@ -6,7 +6,7 @@
 #    By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/06 16:25:01 by ctelma            #+#    #+#              #
-#    Updated: 2020/03/15 14:44:15 by ctelma           ###   ########.fr        #
+#    Updated: 2020/03/17 11:53:22 by ctelma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ PATH_LIB = ./libft/
 
 HEADER = filler.h
 
-OBG = src/algoritm.o src/check_valid.o src/filler.o src/solve.o \
+OBG = src/check_valid.o src/filler.o src/solve.o \
 		src/get_next_line.o src/check_1_line.o \
 		src/read_map.o src/read_sizes.o src/set_mem.o src/check_last_line.o \
 		src/check_mid_lines.o src/ft_min.o src/choose_player.o src/make_map.o \

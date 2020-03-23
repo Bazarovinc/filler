@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/08 17:11:20 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/08 18:04:06 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/17 11:53:22 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ static void	check_left_corner(t_pl *p, int i, int j, int c)
 
 static void	check_mid(t_pl *p, int i, int j, int c)
 {
-	int  arr[8];
+	int	arr[8];
 
 	if ((p->m[i - 1][j - 1] == c || p->m[i - 1][j] == c || p->m[i][j + 1] == c
-		 || p->m[i - 1][j + 1] == c || p->m[i + 1][j + 1] == c ||
+		|| p->m[i - 1][j + 1] == c || p->m[i + 1][j + 1] == c ||
 			p->m[i + 1][j] == c || p->m[i + 1][j - 1] == c ||
 			p->m[i][j - 1] == c) && p->m[i][j] >= 0)
 		p->m[i][j] = 1;
@@ -78,7 +78,7 @@ static void	check_right_corner(t_pl *p, int i, int j, int c)
 	}
 }
 
-void	check_mid_lines(t_pl *p, int i, int j, int c)
+void		check_mid_lines(t_pl *p, int i, int j, int c)
 {
 	if (j == 0)
 		check_left_corner(p, i, j, c);

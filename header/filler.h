@@ -6,12 +6,12 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 11:17:35 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/15 17:20:35 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/17 12:36:01 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLER_H
-#define FILLER_H
+# define FILLER_H
 
 # include "../libft/includes/libft.h"
 # include <fcntl.h>
@@ -36,31 +36,31 @@ struct					s_pl
 {
 	int		player;
 	char	player_c[2];
-	char 	en_c[2];
+	char	en_c[2];
 	int		**m;
 	int		m_s_x;
 	int		m_s_y;
 	int		**piece;
 	int		p_s_x;
 	int		p_s_y;
-	int 	i;
-	int 	j;
+	int		i;
+	int		j;
 	int		x;
-	int 	y;
-	int 	score;
-	int 	tempx;
-	int 	tempy;
-	int 	score2;
-	int 	tempx2;
+	int		y;
+	int		score;
+	int		tempx;
+	int		tempy;
+	int		score2;
+	int		tempx2;
 	int		tempy2;
-	int 	is_zero;
-	int 	startx;
-	int 	starty;
-	int 	tempi;
-	int 	tempj;
+	int		is_zero;
+	int		startx;
+	int		starty;
+	int		tempi;
+	int		tempj;
 	int		flag_star;
-	int 	freed_p;
-	int 	freed_m;
+	int		freed_p;
+	int		freed_m;
 };
 
 int						get_next_line(const int fd, char **line);
@@ -71,7 +71,7 @@ void					ft_set_struct(t_pl **play);
 int						check_correct_input(char *s, int flag);
 int						read_map_size(t_pl *play, char *s);
 int						read_piece_size(t_pl *play, char *s);
-int						read_piece(t_pl * play);
+int						read_piece(t_pl *play);
 void					make_map(t_pl *p);
 void					choose_player(t_pl *play, char *s);
 void					check_1_line(t_pl *p, int i, int j, int c);

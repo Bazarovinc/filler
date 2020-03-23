@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 12:46:53 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/15 17:12:18 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/17 12:49:47 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static int	read_map_str(t_pl *play, char *s, int i)
 	return (0);
 }
 
-static int 	check_line_number(char *s, int i)
+static int	check_line_number(char *s, int i)
 {
 	if (ft_atoi(s) != i)
 		return (1);
@@ -66,7 +66,7 @@ static int	read_piece_str(t_pl *play, char *s, int i)
 	return (0);
 }
 
-int			read_piece(t_pl * play)
+int			read_piece(t_pl *play)
 {
 	char	*s;
 	int		i;
@@ -90,7 +90,7 @@ int			read_piece(t_pl * play)
 	return (0);
 }
 
-int		read_map(t_pl *play)
+int			read_map(t_pl *play)
 {
 	char	*s;
 	int		i;

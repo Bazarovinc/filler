@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/06 13:41:52 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/06 13:49:51 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/17 11:53:22 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		read_piece_size(t_pl *play, char *s)
 	play->p_s_y = ft_atoi(s + 6);
 	if (play->p_s_y > 9 && play->p_s_y < 100)
 		play->p_s_x = ft_atoi(s + 9);
-	else if (play->p_s_y < 9)
+	else if (play->p_s_y <= 9)
 		play->p_s_x = ft_atoi(s + 8);
 	else if (play->p_s_y > 99)
 		play->p_s_x = ft_atoi(s + 10);

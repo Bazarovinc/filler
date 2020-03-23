@@ -2,10 +2,11 @@ import pygame
 
 class Settings():
 
-    def __init__(self, rows, columns):
-        self.screen_width = 1800
-        self.screen_height = 1000
-        self.bg_color = 224, 224, 224
+    def __init__(self, rows, columns, surface):
+        self.screen_rect = surface.get_rect()
+        self.screen_width = self.screen_rect.width
+        self.screen_height = self.screen_rect.height
+        self.bg_color = 128, 128, 128
         self.rows = int(rows)
         self.columns = int(columns)
         self.block_size = 0

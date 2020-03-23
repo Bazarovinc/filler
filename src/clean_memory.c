@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/09 16:05:56 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/15 17:15:43 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/17 11:53:22 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static void	clean_map(int **map, int *s1, int *s2)
 	*s2 = 0;
 }
 
-void	clean_memory(t_pl *play)
+void		clean_memory(t_pl *play)
 {
 	if (play)
 	{

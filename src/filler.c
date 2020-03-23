@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 11:14:58 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/15 16:26:05 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/17 12:47:40 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static int	first_read(t_pl *play)
 	return (0);
 }
 
-int		main(void)
+int			main(void)
 {
 	t_pl *play;
 

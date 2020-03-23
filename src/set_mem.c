@@ -6,13 +6,13 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 17:09:58 by ctelma            #+#    #+#             */
-/*   Updated: 2020/03/15 17:20:35 by ctelma           ###   ########.fr       */
+/*   Updated: 2020/03/17 11:53:22 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header/filler.h"
 
-int		**ft_set_matrix(int size_1, int size_2, int *freed)
+int			**ft_set_matrix(int size_1, int size_2, int *freed)
 {
 	int i;
 	int **matrix;
@@ -30,10 +30,8 @@ int		**ft_set_matrix(int size_1, int size_2, int *freed)
 	return (matrix);
 }
 
-void	ft_set_struct(t_pl **play)
+static void	init(t_pl **play)
 {
-	if ((*play = (t_pl*)malloc(sizeof(t_pl))))
-		;
 	(*play)->m_s_x = 0;
 	(*play)->m_s_y = 0;
 	(*play)->player = 0;
@@ -45,4 +43,23 @@ void	ft_set_struct(t_pl **play)
 	(*play)->y = 0;
 	(*play)->freed_m = 0;
 	(*play)->freed_p = 0;
+	(*play)->score = 0;
+	(*play)->score2 = 0;
+	(*play)->tempx = 0;
+	(*play)->tempy = 0;
+	(*play)->tempx2 = 0;
+	(*play)->tempy2 = 0;
+	(*play)->is_zero = 0;
+	(*play)->startx = 0;
+	(*play)->starty = 0;
+	(*play)->tempi = 0;
+	(*play)->tempj = 0;
+	(*play)->flag_star = 0;
+}
+
+void		ft_set_struct(t_pl **play)
+{
+	if ((*play = (t_pl*)malloc(sizeof(t_pl))))
+		;
+	init(play);
 }
